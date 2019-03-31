@@ -5,7 +5,9 @@ const Title = (props) => (
     <header className="title-default" >
         <picture>
             <source srcSet={logo} type="image/webp"></source>
-            <img className='logo' src={logo} alt="Telecine Play" />
+            <a href="/">
+                <img className='logo' src={logo} alt="Telecine Play" />
+            </a>
         </picture>
         <h1 className="title-text">{props.title}</h1>
     </header>
