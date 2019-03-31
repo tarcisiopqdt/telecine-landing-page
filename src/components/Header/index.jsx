@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from '../../assets/imgs/logo.png'
 
-const Header = () => (
+const Header = (props) => (
    <header className="main-header">
       <div className='container grid grid-template-columns'>
 
@@ -18,6 +18,13 @@ const Header = () => (
          </div>
 
          <div className="header-carousel">
+            <picture>
+               <source media="(min-width: 1024px)" srcset={props.imgDesktop} />
+               <source media="(min-width: 724px )"srcset={props.imgTablet}/>
+              
+               <img className='img-resp' src={props.imgDesktop} alt="" />
+            </picture>
+
          </div>
 
       </div>

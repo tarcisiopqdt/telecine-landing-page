@@ -1,5 +1,5 @@
-@import '_variables.scss';
-@import 'mixins.scss';
+@import './components/variables';
+@import './components/mixins.scss';
 
 @import '../src/components/Header/styles.scss';
 @import '../src/components/Main/Carousel/style.scss';

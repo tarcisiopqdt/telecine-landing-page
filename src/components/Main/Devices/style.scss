@@ -1,5 +1,5 @@
 .devices-header{
-    @include font-primaria(1.5em);
+    @include font-primaria(1.5em, $cor-secundaria);
     padding: 20px 0px; 
     text-align: center;
 

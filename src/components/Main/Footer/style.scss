@@ -9,9 +9,8 @@
         margin: 0 auto;
     }
     h2{
-        @include font-primaria(1em);
+        @include font-primaria(1em,$cor-secundaria);
         text-transform: uppercase;
-        color: $cor-secundaria;
         text-align: center;
     }
     .span-ajuda{
