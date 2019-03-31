@@ -7,6 +7,12 @@
 @import '../src/components/Main/Devices/style.scss';
 @import '../src/components/Main/style.scss';
 
+@import '../src/components/CadastroForm/style.scss';
+@import '../src/components/Title/style.scss';
+
+*{
+  box-sizing: border-box;
+}
 body{
   @include reset;
 }

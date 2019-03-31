@@ -6,7 +6,7 @@
     -moz-osx-font-smoothing: grayscale;
     box-sizing: border-box;
     list-style: none;
-    color: white;
+    color: black;
 }
 
 @mixin font-primaria($tam, $cor : white){
@@ -19,6 +19,7 @@
 @mixin h1-header($tam){
     font-weight: normal;
     font-size: $tam;
+    color: $cor-quartaria;
 }
 
 @mixin button{
