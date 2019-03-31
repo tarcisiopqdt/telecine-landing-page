@@ -1,0 +1,64 @@
+.main-header{
+    @include h1-header(1em);
+    background-image: url("https://cdn.telecineplay.com.br/isl/api/v1/dataservice/ResizeImage/$value?Format=%27jpg%27&Quality=85&ImageId=%27179458%27&EntityType=%27Item%27&EntityId=%2710809%27&Width=1920&Height=640&device=web_browser&subscriptions=Anonymous");
+    background-image: url("https://cdn.telecineplay.com.br/isl/api/v1/dataservice/ResizeImage/$value?Format=%27jpg%27&Quality=85&ImageId=%27179464%27&EntityType=%27Item%27&EntityId=%2710809%27&Width=1200&Height=900&device=web_browser&subscriptions=Anonymous");
+    background-repeat: no-repeat;
+//    background-position: center;
+//    background-size: contain;
+    object-fit: cover;
+    height: 100%;
+    padding: 10px;
+    padding-bottom: 60px;
+    height: 60vh;
+
+
+    .logo{
+        display: block;
+        margin-bottom: 20px;
+    }
+    h1{
+        margin: 30px 0px;
+        font-size: 3em;
+        text-shadow: -2px 4px 8px #000;
+    }
+    h2{ 
+        margin: 30px 0px;
+        text-shadow: -1px 2px 4px #000;
+    }
+    .btn{
+        @include button();
+    }
+
+    @include device(mobile){
+        background-color: black;
+        text-align: center;
+        height: 100vh;
+
+        @include h1-header(0.85em);
+        .btn{
+            margin: 0 auto;
+            font-size: 22px;
+        }
+        .logo{
+            width: 120px;
+            margin: 0 auto;
+        }
+    }
+
+    @include device(tablet){
+        background-color: black;
+        padding-bottom: 0px;
+        height: 80vh;
+        @include h1-header(0.85em);
+
+        .btn{
+            padding: 15px 10px;
+            font-size: 18px;
+            width: 240px;
+        }
+        .logo{
+            width: 120px;
+        }
+    }
+}
+

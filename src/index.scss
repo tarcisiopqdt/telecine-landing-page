@@ -1,0 +1,33 @@
+@import '_variables.scss';
+@import 'mixins.scss';
+
+@import '../src/components/Header/styles.scss';
+@import '../src/components/Main/Carousel/style.scss';
+@import '../src/components/Main/Footer/style.scss';
+@import '../src/components/Main/Devices/style.scss';
+@import '../src/components/Main/style.scss';
+
+body{
+  @include reset;
+}
+h1,h2, p, ul, li, a, img{
+  @include reset;
+
+}
+.container{
+  display: grid;
+  max-width: 1564px;
+  margin: 0 auto;
+  padding: 10px 10px;
+}
+
+.grid{
+  display: grid;
+}
+.grid-template-columns{
+  grid-template-columns: 55% 45%;
+}
+
+
+
+

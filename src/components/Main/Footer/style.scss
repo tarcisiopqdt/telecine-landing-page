@@ -1,0 +1,23 @@
+.footer{
+    background-color: black;
+    padding-bottom: 20px;
+    
+    .logo{
+        display: block;
+        padding: 15px;
+        width: 120px;
+        margin: 0 auto;
+    }
+    h2{
+        @include font-primaria(1em);
+        text-transform: uppercase;
+        color: $cor-secundaria;
+        text-align: center;
+    }
+    .span-ajuda{
+        text-transform: uppercase;
+        color: gray;
+        text-align: center;
+    }
+
+}
