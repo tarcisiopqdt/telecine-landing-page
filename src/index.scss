@@ -1,9 +1,9 @@
-@import './components/variables';
-@import './components/mixins.scss';
+@import './components/_variables';
+@import './components/_mixins.scss';
 
 @import '../src/components/Header/styles.scss';
 @import '../src/components/Main/Carousel/style.scss';
-@import '../src/components/Main/Footer/style.scss';
+@import '../src/components/Footer/style.scss';
 @import '../src/components/Main/Devices/style.scss';
 @import '../src/components/Main/style.scss';
 

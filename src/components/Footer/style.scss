@@ -9,7 +9,7 @@
         margin: 0 auto;
     }
     h2{
-        @include font-primaria(1em,$cor-secundaria);
+        @include font-primaria(1em,$cor-quartaria);
         text-transform: uppercase;
         text-align: center;
     }
