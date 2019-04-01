@@ -1,38 +1,29 @@
 @import './components/_variables';
 @import './components/_mixins.scss';
 
+@import "react-alice-carousel/lib/scss/alice-carousel.scss";
+
 @import '../src/components/Header/styles.scss';
 @import '../src/components/Main/Carousel/style.scss';
 @import '../src/components/Footer/style.scss';
 @import '../src/components/Main/Devices/style.scss';
 @import '../src/components/Main/style.scss';
-
 @import '../src/components/CadastroForm/style.scss';
 @import '../src/components/Title/style.scss';
 
 *{
   box-sizing: border-box;
 }
-body{
-  @include reset;
-}
-h1,h2, p, ul, li, a, img{
-  @include reset;
 
+body, h1,h2, p, ul, li, a, img{
+  @include reset;
 }
 .container{
   display: grid;
   max-width: 1564px;
   margin: 0 auto;
-  padding: 10px 10px;
 }
 
-.grid{
-  display: grid;
-}
-.grid-template-columns{
-  grid-template-columns: 55% 45%;
-}
 
 
 

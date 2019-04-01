@@ -9,7 +9,8 @@ const Title = (props) => (
                 <img className='logo' src={logo} alt="Telecine Play" />
             </a>
         </picture>
-        <h1 className="title-text">{props.title}</h1>
+        <h1 className="title">{props.title}</h1>
+        <h2 className="subtitle">{props.subtitle}</h2>
     </header>
 
 

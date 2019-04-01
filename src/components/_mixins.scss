@@ -14,6 +14,7 @@
     font-size: $tam;
     font-weight: normal;
     line-height: 1.4em;
+
 }
 
 @mixin h1-header($tam){
@@ -24,18 +25,17 @@
 
 @mixin button{
     text-decoration: none;
-    color: white;
     background-color: $cor-primaria;
     color: $cor-quartaria;
-    display: block;
     text-align: center;
     font-size: 22px;
     font-family:  sans-serif sans-serif;
     font-weight: bold;
-    padding: 20px 20px;
-    border-radius: 32px;
+    padding: 21px 20px 21px 20px;
     width: 300px;
     text-transform: uppercase;
+    border-radius: 36px;
+
     &:hover{
        text-decoration: underline;
     }

@@ -1,62 +1,50 @@
-.main-header{
-    padding: 10px;
-    padding-bottom: 20vh;
+.bg-header{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    text-align: center;
 
-    .logo{
-        display: block;
-        margin-bottom: 20px;
-    }
-    h1{
-        color: $cor-quartaria;
-        margin: 30px 0px;
-        font-size: 3em;
-        text-shadow: -2px 4px 8px #000;
-    }
-    h2{ 
-        color: $cor-quartaria;
-        margin: 30px 0px;   
-        text-shadow: -1px 2px 4px #000;
-    }
-    .btn{
-        @include button();
-    }
-    .img-resp{
-        width: auto;
-      
-    }
-
-    @include device(mobile){
-        text-align: center;
-        @include h1-header(0.85em);
-        .btn{
-            margin: 0 auto;
+    .filter-header{
+        padding: 36px 0 86px;
+        width: 50%;
+        margin: 0 auto;
+        .logo{
+            padding: 10px 0px
+        }
+        .header-title{
+            font-size: 3em;
+            color: $cor-quartaria;
+            text-shadow: -2px 4px 8px #000;
+            padding: 40px 0px;
+            text-transform: uppercase;
+        }
+        .header-subtitle{
             font-size: 22px;
+            color: $cor-quartaria;
+            font-weight: normal;
+            padding: 0px 0px 40px 0px;
         }
-        .logo{
-            width: 120px;
-            margin: 0 auto;
+        .btn-assine{
+            @include button();
+            margin: 0px auto;
+        }
+
+        @include device(tablet){
+            width: 75%;
+            .header-title{
+                font-size: 2.5em;
+                padding: 40px 0px;
+            }
+        }
+        @include device(mobile){
+            width: 100%;
+            padding: 10px 10px;
+
+            .header-title{
+                padding: 20px 0px;
+            }
         }
     }
 
-    @include device(tablet){
-        @include h1-header(0.85em);
-
-        .btn{
-            padding: 15px 10px;
-            font-size: 18px;
-            width: 240px;
-        }
-        .logo{
-            width: 120px;
-        }
-    }
 }
 
-.header-carousel{
-    picture img{
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        z-index: -1;
-    }
-}
