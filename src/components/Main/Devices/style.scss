@@ -1,14 +1,16 @@
 
 .devices{
      h1{
-        text-align: center;
         color: $cor-secundaria;
+        padding-bottom: 20px;
+    }
+    h2{
+        text-align: center;
         padding-bottom: 20px;
     }
     .devices-header{
         @include font-primaria(1.5em, $cor-secundaria);
         padding: 20px 0px; 
-        text-align: center;
         &::after{
             content: '';
             width: 200px;
@@ -16,13 +18,13 @@
             background-color: $cor-secundaria;
             display: inline-block;
             margin-left: 20px;
+            margin-bottom: 5px;
         }
     }
 }
 
 .cards-container{
     display: flex;
-    
     .card{
         max-width: calc(33% - 20px);
         margin: 0 auto 20px auto;
@@ -52,7 +54,6 @@
     @include device(mobile){
         flex-direction: column;
         width: 100%;
-
         .card{
             max-width: 100%;
         }

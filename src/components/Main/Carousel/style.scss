@@ -1,0 +1,22 @@
+.slide{
+    padding: 20px 0px;
+    &:hover {
+        will-change: transform;
+    }
+
+    .slide-item{
+        display: block;
+        margin: 0 auto;
+        flex-shrink: 0;
+        max-width: 800px;
+        border-radius: 4px;
+        overflow: hidden;
+        box-shadow: 0 2px 4px rgba(0,0,0,.4);
+        opacity: .8;
+        transform: scale(.8);
+        transition: .4s;
+    }
+
+
+}
+

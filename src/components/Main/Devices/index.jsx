@@ -7,7 +7,7 @@ const Devices = () => {
         <section className='devices'>
             <div className='container'>
                 <h1 className='devices-header'>Dispositivos</h1>
-                <h1>O melhor catálogo. Em todas as telas.</h1>
+                <h2>O melhor catálogo. Em todas as telas.</h2>
                 <ul className='cards-container'>
                     <li className="card">
                         <picture>

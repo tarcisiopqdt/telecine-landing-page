@@ -19,9 +19,19 @@ body, h1,h2, p, ul, li, a, img{
   @include reset;
 }
 .container{
-  display: grid;
+  display: block;
   max-width: 1564px;
   margin: 0 auto;
+  @include device(tablet){
+    
+    max-width: 80%;
+ 
+  }
+  @include device(mobile){
+    max-width: 100%;
+  
+    margin: 0 auto;
+  }
 }
 
 
