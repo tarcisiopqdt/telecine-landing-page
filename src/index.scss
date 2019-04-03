@@ -20,21 +20,17 @@ body, h1,h2, p, ul, li, a, img{
 }
 .container{
   display: block;
-  max-width: 1564px;
+  max-width: 1224px;
   margin: 0 auto;
+  padding: 0px 10px;
   @include device(tablet){
-    
-    max-width: 80%;
- 
+    max-width: 90%;
   }
   @include device(mobile){
-    max-width: 100%;
-  
+    max-width: 400px;
     margin: 0 auto;
   }
 }
-
-
 
 
 

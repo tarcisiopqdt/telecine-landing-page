@@ -1,27 +1,26 @@
-.title-default{
-    background-color: $cor-terciaria;
+
+.logo-content{
+    background-color: $cor-btn-principal;
     .logo{
         padding: 10px 0px;
         display: block;
         margin: 0 auto;
         text-align: center;
     }
-    .title{
-        padding: 10px 0px;
-        text-align: center;
-        color: $cor-quartaria;
-    }
- 
 }
-.h1-info{
+
+.title{
+ 
     text-align: center;
-    font-size: 3em;
- }
+    color: $cor-secundaria;
+}
 .subtitle{
+    font-weight: normal;
     text-align: center;
     max-width: 500px;
     margin: 0 auto;
-    padding: 20px 0px;
+   
 }
-
-
+.content-center{
+  padding: 120px 0px;
+}

@@ -1,8 +1,10 @@
 .bg-header{
+    background-color: $cor-bg-header;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50%;
     text-align: center;
+    padding-bottom: 220px;
 
     .filter-header{
         padding: 36px 0 86px;

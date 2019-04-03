@@ -1,5 +1,6 @@
 
 .devices{
+   
      h1{
         color: $cor-secundaria;
         padding-bottom: 20px;
@@ -9,11 +10,15 @@
         padding-bottom: 20px;
     }
     .devices-header{
-        @include font-primaria(1.5em, $cor-secundaria);
+        text-transform: uppercase;
+        color:$cor-secundaria;
         padding: 20px 0px; 
+        font-size: 16px;
+
         &::after{
             content: '';
-            width: 200px;
+            max-width: 300px;
+            min-width: 200px;
             height: 3px;
             background-color: $cor-secundaria;
             display: inline-block;
@@ -21,45 +26,58 @@
             margin-bottom: 5px;
         }
     }
+    @include device(mobile){
+        justify-content: center;
+    }
 }
 
+//Conteiner de cards de dispositivos
 .cards-container{
     display: flex;
-    
-    justify-content: space-between;
-    .card{
-        max-width: 400px;
-        color: $cor-secundaria;
-        margin-right: 20px;
-        margin-bottom: 60px;
-        .img-container{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        
-            width: 100%;
-            align-items: center;
-            overflow: hidden;
-         
-           margin-right: 20px;
-        }
-        .img-device{
-            max-width: 100%;
-           display: block;
-         }
-        .devices-suported li{
-            color: $cor-secundaria;
-            margin-bottom: 10px;
-        }
- 
-    }
-            
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+
+    //Conteiner no mobile
     @include device(mobile){
         flex-direction: column;
         width: 100%;
         .card{
             max-width: 100%;
+            margin-right: 0px;
         }
-
+        .card:last-child{
+            margin-right: 0px;
+        }  
     }
+
+    //Cada card
+    .card{
+        max-width: 400px;
+        padding: 10px;
+            .img-container{
+                box-shadow: 2px 4px 8px rgba(0,0,0,0.5),
+                            1px 2px 4px rgba(0,0,0,0.5);
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+                margin: 0 auto;
+            }
+            .img-device{
+                max-width: 100%;
+                display: block;
+            }
+            .devices-suported {
+                display: flex;
+                justify-content: space-between;
+                flex: 1;
+                flex-wrap: wrap;
+                color: $cor-secundaria;
+            }
+            
+        }  
+    //ultimo filho de card    
+    .card:last-child{
+        margin-right: 0px;
+    }  
 }

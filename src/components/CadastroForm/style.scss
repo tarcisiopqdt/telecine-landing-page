@@ -2,9 +2,12 @@
 
     max-width: 750px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 40px 20px;
     display: flex;
 
+    @include device(mobile){
+        padding: 10px 20px 20px 20px;
+    }
     input{
         border: none;
         color: black;
@@ -17,6 +20,9 @@
         margin: 25px 0px 0px;
         border-bottom: 2px solid #c6c6c6;
         letter-spacing: 2px;
+    }
+    input:first-child{
+        margin: 0px 0px 0px;
     }
     input[type=submit]{
         cursor: pointer;

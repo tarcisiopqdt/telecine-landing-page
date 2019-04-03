@@ -1,5 +1,5 @@
 import React from 'react'
-import deviceSmart from '../../../assets/imgs/smart-devices.jpg'
+
 import deviceTv from '../../../assets/imgs/smart-tv.jpg'
 
 const Devices = () => {
@@ -11,9 +11,9 @@ const Devices = () => {
                 <ul className='cards-container'>
                     <li className="card">
                         <picture>
-                            <source media="(min-width: )" srcSet={deviceSmart} />
+                            <source media="(min-width: )" srcSet={deviceTv} />
                             <div className='img-container'>
-                            <img className='img-device' src={deviceSmart} alt="" />
+                                <img className='img-device' src={deviceTv} alt="" />
                             </div>
                         </picture>
 
@@ -32,15 +32,13 @@ const Devices = () => {
                                 <img className='img-device' src={deviceTv} alt="Smart TVs" />
                             </div>
                         </picture>
-
                         <h3>Assista na TV</h3>
                         <ul className='devices-suported'>
                             <li>&#10003; Smart TVs</li>
                             <li>&#10003; Xbox One</li>
                             <li>&#10003; Chomecast</li>
                         </ul>
-
-                    </li> 
+                    </li>
                     <li className="card">
                         <picture>
                             <source media="(min-width: )" srcSet={deviceTv} />
@@ -48,14 +46,18 @@ const Devices = () => {
                                 <img className='img-device' src={deviceTv} alt="Smart TVs" />
                             </div>
                         </picture>
+                        <div className="device-info">
+                            <h3>Ou onde quiser</h3>
+                            <ul className='devices-suported'>
+                                <li>&#10003; Android</li>
+                                <li>&#10003; IOS</li>
+                                <li>&#10003; PC</li>
+                                <li>&#10003; Xbox One</li>
+                            <li>&#10003; Chomecast</li>
+                                
+                            </ul>
+                        </div>
 
-                        <h3>Ou onde quiser</h3>
-                        <ul className='devices-suported'>
-                            <li>&#10003; Android</li>
-                            <li>&#10003; IOS</li>
-                            <li>&#10003; PC</li>
-                        </ul>
-                        
                     </li>
                 </ul>
             </div>
