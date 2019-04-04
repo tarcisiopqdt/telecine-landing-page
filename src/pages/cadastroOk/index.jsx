@@ -13,8 +13,7 @@ const cadastroOk = () => (
                       para aproveitar seus 7 dias grátis"
             className=" content-center"
         />
-
-       <Footer />
+       <Footer className="footer-pos-bottom-0"/>
     </>
 )
 

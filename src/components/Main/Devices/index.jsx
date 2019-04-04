@@ -27,6 +27,7 @@ const Devices = (props) => {
                                 <li>&#10003; {device.list[0]}</li>
                                 <li>&#10003; {device.list[1]}</li>
                                 <li>&#10003; {device.list[2]}</li>
+                                <li>&#10003; {device.list[3]}</li>
                             </ul>
                         </li>
                         )

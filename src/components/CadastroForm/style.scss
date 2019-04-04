@@ -1,5 +1,4 @@
 .wrapper-form{
-
     max-width: 750px;
     margin: 0 auto;
     padding: 40px 20px;
@@ -24,18 +23,14 @@
     input:first-child{
         margin: 0px 0px 0px;
     }
-    input[type=submit]{
-        cursor: pointer;
-        border-bottom: none;
+    .btn-assine{
         height: 60px;
         margin: 20px auto 0px auto;
         @include button();
-        padding: 0px;
-        text-transform: none;
-        letter-spacing: 2px;
+        padding: 17px 19px 20px 19px;
+        letter-spacing: 1px;
     }
     input:focus{
-     
         border-bottom: 2px solid $cor-terciaria;
         outline: none;
     }

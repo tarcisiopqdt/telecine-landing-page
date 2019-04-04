@@ -8,7 +8,7 @@ const Cadastro = () => (
     <>  
         <Title title="Para começar a usar seus 7 dias grátis precisamos de alguns dados"/>
         <CadastroForm />
-        <Footer />
+        <Footer className=""/>
     </>
 )
 

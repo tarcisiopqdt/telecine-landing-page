@@ -1,0 +1,34 @@
+{
+    "devices": [
+        {
+            "title": "Assista na TV",
+            "urlImg": "https://i.ytimg.com/vi/WC21cAJeerc/sddefault.jpg",
+            "list": [
+                "Smart TVs",
+                "Xbox One",
+                "Chromecast",
+                "PS4"
+            ]
+        },
+        {
+            "title": "Em Smartphones",
+            "urlImg": "https://i.ytimg.com/vi/mT-7mntAyWI/sddefault.jpg#404_is_fine",
+            "list": [
+                "IOS",
+                "Android",
+                "Windows phone",
+                "Palm Top :P"
+            ]
+        },
+        {
+            "title": "Ou onde quiser",
+            "urlImg": "https://i.ytimg.com/vi/IKyH2s_MlCQ/sddefault.jpg?v=5b366c69",
+            "list": [
+                "Eu",
+                "na Telecine ?",
+                "*-*",
+                "♥"
+            ]
+        }
+    ]
+}

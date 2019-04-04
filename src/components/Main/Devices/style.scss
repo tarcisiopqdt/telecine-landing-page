@@ -1,6 +1,5 @@
 
 .devices{
-
      h1{
         color: $cor-font-clara;
         padding-bottom: 20px;
@@ -34,24 +33,15 @@
 
 //Conteiner de cards de dispositivos
 .cards-container{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-bottom: 60px;
-
-    //Conteiner no mobile
-    @include device(mobile){
-        flex-direction: column;
-        width: 100%;
-        .card{
-            max-width: 100%;
-            margin-right: 0px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        //Conteiner no mobile
+        @include device(mobile){
+           align-items: center;
+            flex-direction: column;
+            width: 100%;
         }
-        .card:last-child{
-            margin-right: 0px;
-        }  
-    }
-
     //Cada card
     .card{
         max-width: 380px;
@@ -85,6 +75,13 @@
             }
             
         }  
+
+        @include device(mobile){
+            .card{
+                max-width: 85%;
+                margin-right: 0px;
+            }
+        }      
     //ultimo filho de card    
     .card:last-child{
         margin-right: 0px;

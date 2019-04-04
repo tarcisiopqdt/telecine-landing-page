@@ -15,9 +15,15 @@
   box-sizing: border-box;
 }
 
-body, h1,h2, h3, p, ul, li, a, img{
+html, body, h1,h2, h3, p, ul, li, a, img{
   @include reset;
 }
+
+html, body {
+  height: 100%;
+}
+
+
 .container{
   display: block;
   max-width: 1224px;
@@ -31,6 +37,3 @@ body, h1,h2, h3, p, ul, li, a, img{
     margin: 0 auto;
   }
 }
-
-
-
