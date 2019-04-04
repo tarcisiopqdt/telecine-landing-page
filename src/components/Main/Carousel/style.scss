@@ -1,11 +1,8 @@
 .slide{
-    position: relative;
-    top: -300px;
     .slide-item{
         display: block;
         margin: 0 auto;
-        flex-shrink: 0;
-        max-width: 800px;
+      
         border-radius: 30px;
         box-shadow: 0 2px 4px rgba(0,0,0,.4);
         transform: scale(.9);
@@ -13,10 +10,15 @@
             transform: scale(0.6);
         }
     }
+    @include device(mobile){
+        
+        top: -220px;
+    }
 }
 
 .alice-carousel{
     padding: 0px 0px 20px 0px;
+    max-width: 800px;
 
     .alice-carousel__dots{
         margin: 0px;   

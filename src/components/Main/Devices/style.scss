@@ -1,17 +1,18 @@
 
 .devices{
-   
+
      h1{
-        color: $cor-secundaria;
+        color: $cor-font-clara;
         padding-bottom: 20px;
     }
     h2{
         text-align: center;
+        color: $cor-font-clara;
         padding-bottom: 20px;
     }
     .devices-header{
         text-transform: uppercase;
-        color:$cor-secundaria;
+        color: $cor-font-clara;
         padding: 20px 0px; 
         font-size: 16px;
 
@@ -20,7 +21,7 @@
             max-width: 300px;
             min-width: 200px;
             height: 3px;
-            background-color: $cor-secundaria;
+            background-color: $cor-font-clara;
             display: inline-block;
             margin-left: 20px;
             margin-bottom: 5px;
@@ -53,11 +54,12 @@
 
     //Cada card
     .card{
-        max-width: 400px;
-        padding: 10px;
+        max-width: 380px;
+        margin-right: 20px;
+        padding: 20px 0px;
             .img-container{
-                box-shadow: 2px 4px 8px rgba(0,0,0,0.5),
-                            1px 2px 4px rgba(0,0,0,0.5);
+                // box-shadow: 2px 4px 8px rgba(0,0,0,0.2),
+                //             1px 2px 4px rgba(0,0,0,0.2);
                 border-radius: 10px;
                 display: flex;
                 align-items: center;
@@ -66,13 +68,20 @@
             .img-device{
                 max-width: 100%;
                 display: block;
+                border-radius: 10px;
+            }
+            h3{ 
+                padding: 10px 0px;
+                text-transform: uppercase;
+                color: $cor-font-clara;
+
             }
             .devices-suported {
                 display: flex;
                 justify-content: space-between;
                 flex: 1;
                 flex-wrap: wrap;
-                color: $cor-secundaria;
+                color: $cor-font-clara;
             }
             
         }  

@@ -6,11 +6,11 @@ import AliceCarousel from 'react-alice-carousel';
 const Carousel = (props) => {
   const handleOnDragStart = e => e.preventDefault()
   return (
-    <div className=" slide">
+    <div className="container slide">
       <AliceCarousel mouseDragEnabled
         buttonsDisabled={true}
         disableAutoPlayOnAction={true}
-        autoPlayInterval={10000}
+        autoPlayInterval={2000}
         className={"slide-item"}
         autoPlay={true}>
 

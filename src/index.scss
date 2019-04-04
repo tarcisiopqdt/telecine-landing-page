@@ -15,7 +15,7 @@
   box-sizing: border-box;
 }
 
-body, h1,h2, p, ul, li, a, img{
+body, h1,h2, h3, p, ul, li, a, img{
   @include reset;
 }
 .container{
